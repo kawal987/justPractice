@@ -1,0 +1,291 @@
+.mainCalFormContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f4fc;
+}
+.InnerForm {
+  border: 3px solid #6791e6;
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid #8bc34a;
+  border-radius: 60px;
+  padding: 30px;
+}
+
+.label {
+  color: "#161616";
+  font-size: 15px;
+  font-weight: bold;
+  word-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.OutPutlabel {
+  color: #161616;
+  font-size: 15px;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+.subContainer {
+  margin-bottom: 26px;
+}
+.inputStyle {
+  display: block;
+  padding: 0.6rem;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #19434c;
+  border: none;
+  border: 1px solid #9ba8bb;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+
+  transition: all 0.8s ease-in-out;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.spanInput {
+  border: 1px solid #9ba8bb;
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgb(234, 241, 252);
+  box-shadow: 2px 2px 1px #9ba8bb;
+}
+
+.inputField {
+  border: none;
+  width: 86%;
+  background: transparent;
+  background-color: none;
+  cursor: pointer;
+}
+.inputFieldWithout {
+  border: none;
+  width: 89%;
+  background: transparent;
+  background-color: none;
+  cursor: pointer;
+}
+.spanWithoutInput {
+  border: 1px solid #9ba8bb;
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgb(234, 241, 252);
+  box-shadow: 2px 2px 1px #9ba8bb;
+}
+.spanInput :focus,
+.inputField :focus {
+  border: none;
+  outline: none;
+  background: transparent;
+  background-color: none;
+}
+.spanWithoutInput :focus,
+.inputField :focus {
+  border: none;
+  outline: none;
+  background: transparent;
+  background-color: none;
+}
+.subOutput {
+  margin-bottom: 7.5px;
+  background-color: white;
+  padding: 3px 5px 3px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #cadbfc;
+  border: 1px solid #e3ebfa;
+}
+
+.outputResult {
+  color: #386cd1;
+  font-size: 15px;
+}
+.submitBtn {
+  margin-top: 10px;
+  display: flex;
+  padding: 0.4rem;
+  outline: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #fff;
+  background-color: #6791e6;
+  border: none;
+  border: 1px solid #9ba8bb;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  width: 20%;
+  transition: all 0.8s ease-in-out;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #5484e3;
+  text-align: center;
+  box-shadow: 0px 0px 10px #5484e3;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.inputStyle::placeholder {
+  color: white;
+}
+.outputHeading {
+  border-bottom: 1px solid #bdccf2;
+  padding-bottom: 5px;
+  margin: 0px 0px 6px 0px;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 1px rgb(41, 40, 40);
+}
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(1, 3fr 1fr);
+  box-sizing: border-box;
+}
+
+.subGrid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  box-sizing: border-box;
+  margin-top: 100px;
+  padding: 10px;
+}
+.outputContainer {
+  background-color: #759cea;
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+  border: 1px solid #e3ebfa;
+  box-shadow: 0px 0px 10px 0px#2e66d4;
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .mainCalFormContainer {
+    width: 97%;
+  }
+  .spanInput {
+    width: 100%;
+  }
+  .inputField {
+    width: 86.5%;
+  }
+}
+@media (max-width: 991px) {
+  .subGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .submitBtn {
+    width: 130px;
+    padding: 4px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .InnerForm {
+    width: 100vw;
+    margin: 0px 0px 0px 20px;
+    border: none;
+  }
+}
+@media (max-width: 425px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .subOutput {
+    padding: 10px;
+  }
+  .label {
+    font-size: 15px;
+  }
+  .outputResult {
+    font-size: 15px;
+  }
+  .submitBtn {
+    width: 120px;
+    padding: 6px;
+  }
+  .subContainer {
+    margin-bottom: 4px;
+  }
+  .inputField {
+    margin-bottom: 15px;
+  }
+  .inputFieldWithout {
+    margin-bottom: 15px;
+  }
+  .InnerForm {
+    border: none;
+  }
+  .subGrid {
+    margin: 90px 0px 0px 0px;
+    padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .submitBtn {
+    width: 80px;
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .outputContainer {
+    margin: 0px;
+  }
+  .subContainer {
+    margin: 0px;
+  }
+  .outputHeading {
+    font-size: 25px;
+  }
+  .mainCalFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .submitBtn {
+    width: 100px;
+    font-size: 20px;
+  }
+  .outputContainer {
+    margin: 0px;
+  }
+  .subContainer {
+    margin: 0px;
+  }
+  .outputHeading {
+    font-size: 25px;
+  }
+}

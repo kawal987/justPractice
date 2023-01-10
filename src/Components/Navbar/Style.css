@@ -1,0 +1,333 @@
+/* .navContainer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#ul-items {
+  position: absolute;
+  top: 7%; */
+
+/* left: 65.4%; */
+/* justify-content: flex-end; */
+/* transform: translate(-50%, -50%); */
+/* margin: 0; */
+/* padding: 13px 0px 13px 0px; */
+/* display: flex; */
+/* border-radius: 20px; */
+/* box-shadow: 0 0px 10px 0 #6791e6; */
+/* text-align: center; */
+/* background-color: #009688; */
+/* background-color: rgb(117, 113, 113); */
+/* opacity: 3; */
+/* width: 60%; */
+/* width: 65%; */
+/* } */
+/* .truckImage { */
+/* width: 35%; */
+/* width: 13%; */
+/* color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-top: 8px;
+}
+#ul-items #li-items {
+  display: block;
+  text-align: center;
+  list-style-type: none; */
+/* box-shadow: 0px 0px 10px #5484e3; */
+/* text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#ul-items #li-items:last-child {
+  border-right: none;
+}
+#ul-items #li-items a {
+  text-decoration: none;
+  padding: 0 40px;
+  display: block;
+  justify-content: center;
+  justify-content: flex-start;
+} */
+/* #ul-items #li-items a .icon {
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  margin: 0 auto 8px;
+  overflow: hidden; */
+/* margin-left: 10px; */
+/* } */
+/* #ul-items #li-items a .icon i {
+  width: 100%;
+  height: 100%;
+  line-height: 26px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#ul-items #li-items a .icon i:last-child {
+  color: #fff;
+}
+#ul-items #li-items a:hover .icon i {
+  transform: translateY(-100%);
+  color: #61c286;
+} */
+/* #ul-items #li-items a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} */
+/* #ul-items #li-items a .name span {
+  display: block;
+  position: relative;
+  font-size: 17px;
+  text-shadow: 2px 2px 1px rgb(96, 95, 95);
+  transition: 0.5s;
+  color: #fff;
+} */
+/* #ul-items #li-items a .name span:before {
+  content: attr(dataType);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  text-shadow: none;
+  color: black;
+}
+#ul-items #li-items a:hover .name span {
+  transform: translateY(20px);
+  color: black;
+} */
+/* //Tooltip */
+/* .Pulsate {
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 6px;
+  cursor: pointer;
+  text-shadow: 2px 2px 1px rgb(96, 95, 95);
+} */
+/* .Pulsate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+} */
+/* .rxtooltip {
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 20px;
+  color: black;
+  padding: 10px;
+
+  font-size: 15px;
+  width: 250px;
+  position: absolute;
+  text-align: center;
+  top: 210%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+
+  box-shadow: 0px 0px 5px 0px#c9c9ca, inset 0px 0px 5px 0px#cbcccd;
+} */
+/* .Pulsate .rxtooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 0.3s ease-in-out;
+  text-shadow: none;
+} */
+/* a:hover .rxtooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 0.3s ease-in-out;
+  text-shadow: none;
+}
+.rxtooltip:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+  left: 0;
+  top: -5px;
+  right: 0;
+  margin: 0 auto;
+}
+.toltip {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+@media (max-width: 1440px) {
+  #ul-items {
+    width: 59%;
+    left: 40.5%;
+    top: 5%;
+    padding: 9px 0px;
+  }
+}
+@media (max-width: 1024px) {
+  #ul-items {
+    width: 71%;
+    left: 37.1%;
+    top: 7%;
+    padding: 9px 0px;
+  }
+  .truckImage {
+    width: 45%;
+
+    margin-left: 15px;
+    margin-top: 11px;
+  }
+  .rxtooltip {
+    padding: 7px;
+  }
+  #ul-items #li-items a .name span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #ul-items {
+    width: 45%;
+    left: 25.5%;
+    top: 6%;
+    padding: 8px 0px;
+  }
+  #ul-items #li-items a {
+    padding: 0 16px;
+  }
+  .truckImage {
+    width: 89%;
+    margin-left: 10px;
+    margin-top: 18px;
+  }
+  .rxtooltip {
+    padding: 8px;
+    width: 200px;
+  }
+}
+@media (max-width: 425px) {
+  #ul-items {
+    width: 84%;
+    left: 48.5%;
+    top: 7%;
+    padding: 5px;
+    /* margin-bottom: 58px; */
+/* }
+  #ul-items #li-items a {
+    padding: 0 16px;
+  }
+  .truckImage {
+    width: 83%;
+
+    margin-left: 10px;
+    margin-top: 13px;
+  }
+  #ul-items #li-items a .name span {
+    display: block;
+    position: relative;
+    font-size: 13px;
+  }
+
+  .rxtooltip:after {
+    background: none;
+  }
+  .rxtooltip {
+    top: 200%;
+
+    right: -22px;
+  }
+/* } */
+
+/* @media (max-width: 375px) {
+  #ul-items {
+    width: 86%;
+    left: 48.5%;
+    top: 8%;
+  }
+  #ul-items #li-items a {
+    padding: 0 15px;
+  }
+  .truckImage {
+    width: 82%;
+
+    margin-left: 11px;
+    margin-top: 15px;
+  }
+  #ul-items #li-items a .name span {
+    display: block;
+    position: relative;
+    font-size: 12px;
+  }
+  .rxtooltip {
+    top: 200%;
+
+    right: -45px;
+    width: 199px;
+  }
+}
+@media (max-width: 320px) {
+  #ul-items {
+    width: 85%;
+    left: 50%;
+    top: 7%;
+    padding: 10px 0px 10px 0px;
+  }
+  #ul-items #li-items a {
+    padding: 0 12px;
+  }
+  .truckImage {
+    width: 80%;
+
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  #ul-items #li-items a .name span {
+    font-size: 12px;
+  }
+  .rxtooltip {
+    top: 200%;
+    right: -35px;
+    width: auto;
+    padding: 5px;
+  }
+} */
